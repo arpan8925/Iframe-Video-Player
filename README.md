@@ -36,10 +36,17 @@ To run the application locally, follow these steps:
 
 ## Project Structure
 
+```
+├── index.php 
+├── css/
+│   └── styles.css
+└── js/
+    └── player.js
+```
+
 - **index.php**: Main server-side script used for loading and handling video player logic.
-- **Screenshots**: Contains screenshots to demonstrate how the application works.
-- **public/**: Static files for the application.
-- **src/**: Contains the main source code files.
+- **css/styles.css**: Contains the styles used for the user interface.
+- **js/player.js**: Contains JavaScript code to handle video playback.
 
 ## Dependencies
 
