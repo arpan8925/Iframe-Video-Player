@@ -1,38 +1,50 @@
+<?php
+header('Content-Type: text/html; charset=utf-8');
+?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>YouTube Videos</title>
-	<style>
-		.video-wrapper {
-			display: inline-block;
-			width: 200px;
-			height: 200px;
-			margin-right: 10px;
-			margin-bottom: 10px;
-		}
-		iframe {
-			display: block;
-			margin: 0;
-			padding: 0;
-			border: none;
-			width: 100%;
-			height: 100%;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Player</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<h1>YouTube Videos</h1>
-	<form>
-		<label for="videoLink">Enter a YouTube video link:</label>
-		<input type="text" id="videoLink" name="videoLink">
-		<label for="numVideos">Enter the number of videos:</label>
-		<input type="number" id="numVideos" name="numVideos" value="5">
-		<button type="button" id="playBtn">Play Videos</button>
-	</form>
+    <div class="container">
+        <header>
+            <h1>YouTube Video Player</h1>
+            <p class="subtitle">Play multiple instances of your favorite videos</p>
+        </header>
 
-	<div id="videoContainer"></div>
+        <div class="card">
+            <form>
+                <div class="input-form">
+                    <div class="input-group">
+                        <label for="videoLink">YouTube Video Link</label>
+                        <input type="text" id="videoLink" name="videoLink" placeholder="Paste YouTube URL here">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="numVideos">Number of Players</label>
+                        <input type="number" id="numVideos" name="numVideos" value="5" min="1" max="12">
+                    </div>
 
-	<script>
+                    <button type="button" id="playBtn" class="play-button">
+                        <span class="button-icon">▶</span>
+                        Play Videos
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div id="videoContainer" class="video-grid"></div>
+    </div>
+
+    <!-- Include LazyLoad library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.1.0/lazyload.min.js"></script>
+    
+    <script>
         function playVideos() {
             var videoLink = document.getElementById("videoLink").value;
             var videoId = getVideoIdFromLink(videoLink);
@@ -73,17 +85,14 @@
         var playBtn = document.getElementById("playBtn");
         playBtn.addEventListener("click", playVideos);
 
-		function getVideoIdFromLink(link) {
-			var videoId = "";
-			var match = link.match(/(?:\?v=|\/embed\/)([\w-]{11})(?:\&\S+)?/);
-			if (match) {
-				videoId = match[1];
-			}
-			return videoId;
-		}
-	</script>
-
-	<!-- Include LazyLoad library -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.1.0/lazyload.min.js"></script>
+        function getVideoIdFromLink(link) {
+            var videoId = "";
+            var match = link.match(/(?:\?v=|\/embed\/)([\w-]{11})(?:\&\S+)?/);
+            if (match) {
+                videoId = match[1];
+            }
+            return videoId;
+        }
+    </script>
 </body>
-</html>
+</html> 
