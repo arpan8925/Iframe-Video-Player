@@ -63,8 +63,8 @@ Contributions are welcome! If you have any ideas or suggestions, feel free to op
 
 If you have any questions or issues, feel free to reach out:
 
-- **Email**: [your-email@example.com](mailto:your-email@example.com)
-- **GitHub**: [Your GitHub Profile](https://github.com/your-profile)
+- **Email**: [your-email@example.com](mailto:sbxp1966@gmail.com)
+- **GitHub**: [Your GitHub Profile](https://github.com/arpan8925)
 
 ---
 Thank you for checking out this project! Feel free to clone, fork, and contribute as you see fit.
