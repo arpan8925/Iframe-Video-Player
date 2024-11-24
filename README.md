@@ -28,33 +28,21 @@ To run the application locally, follow these steps:
    git clone <repository-url>
    ```
 
-2. Navigate to the project directory:
-   ```bash
-   cd youtube-video-player
-   ```
+2. Start your XAMPP server and ensure Apache is running.
 
-3. Install the necessary dependencies:
-   ```bash
-   npm install
-   ```
+3. Place the project files in the appropriate directory (e.g., `htdocs` for XAMPP).
 
-4. Start the development server:
-   ```bash
-   npm start
-   ```
-
-5. Open your browser and navigate to `http://localhost:3000` to use the application.
+4. Open your browser and navigate to `http://localhost/youtube-video-player` to use the application.
 
 ## Project Structure
 
 - **index.php**: Main server-side script used for loading and handling video player logic.
 - **Screenshots**: Contains screenshots to demonstrate how the application works.
 - **public/**: Static files for the application.
-- **src/**: Contains the main source code files for the React application.
+- **src/**: Contains the main source code files.
 
 ## Dependencies
 
-- **React**: The application is built using React for a responsive and interactive user interface.
 - **YouTube IFrame API**: Used to embed and control YouTube video playback.
 
 ## License
