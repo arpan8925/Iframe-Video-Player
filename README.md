@@ -24,7 +24,7 @@ To run the application locally, follow these steps:
 
 1. Clone this repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/arpan8925/Iframe-Video-Player.git
    ```
 
 2. Start your XAMPP server and ensure Apache is running.
