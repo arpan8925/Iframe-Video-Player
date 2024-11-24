@@ -63,7 +63,7 @@ Contributions are welcome! If you have any ideas or suggestions, feel free to op
 
 If you have any questions or issues, feel free to reach out:
 
-- **Email**: [your-email@example.com](mailto:sbxp1966@gmail.com)
+- **Email**: [sbxp1966@gmail.com](mailto:sbxp1966@gmail.com)
 - **GitHub**: [Your GitHub Profile](https://github.com/arpan8925)
 
 ---
