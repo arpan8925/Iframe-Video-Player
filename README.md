@@ -2,9 +2,8 @@
 
 This project is a web application that allows users to play multiple instances of a YouTube video at the same time. Users can specify the YouTube video link and the number of players they want, and the application will display the specified number of video players for that link.
 
-![Home Page](Screenshot_41.png)
-
-![Multiple Players](Screenshot_42.png)
+![Preview1](./images/img1.PNG)
+![Preview2](./images/img2.PNG)
 
 ## Features
 
